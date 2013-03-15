@@ -51,10 +51,8 @@ var Main = Class({
         });
 
         variance = diffSum/(count);
-        if (count ==1){
-            return 1;
-        }else if (variance==0){
-            return 0;
+        if (variance==0){
+            return 0.5;
         }
        
         var   gau = Gaussian(mean,variance),
